@@ -36,14 +36,9 @@ HTML Forms with PyScript
 
 <py-script>
 
-name = Element("name")
-
-country = Element("countries")
-
-op = Element("output")
-
 def sub(*args, **kwargs):
-    op.write(name + " is a lovely person from " + country + "!")
+    result_place = Element('output')
+    result_place.write(f"{Element('name').value} is a good human from {Element('countries').value}")
 
 </py-script>
 
