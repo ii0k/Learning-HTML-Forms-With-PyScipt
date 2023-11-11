@@ -56,9 +56,9 @@ HTML Forms with PyScript
         <input type="text" id="name" name="name" value="Your Mom"><br>
 
         <select name="countries" id="countries">
-            <option value="usa">United States of America</option>
-            <option value="lmao">lmao only 'mericans here</option>
-            <option value="why">Australia</option>
+            <option value="the USA">United States of America</option>
+            <option value="nowhere">lmao only 'mericans here</option>
+            <option value="Australia">Australia</option>
         </select>
 
         <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
@@ -73,7 +73,7 @@ HTML Forms with PyScript
 
 def sub(*args, **kwargs):
     result_place = Element('output')
-    result_place.write(f"{Element('name').value} is a good human from {Element('countries')}")
+    result_place.write(f"{Element('name').value} is a good human from {Element('countries').value}")
 
 </py-script>
 
